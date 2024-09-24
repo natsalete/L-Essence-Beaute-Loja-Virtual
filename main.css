@@ -62,3 +62,34 @@ nav li a:hover {
   text-align: right;
   background-color: aliceblue;
 }
+
+.container-sobre-a-loja {
+    display: flex;
+    margin-top: 30px;
+}
+
+.container-sobre-a-loja img{
+    width: 50%;
+    margin-right: 3%;
+}
+
+.container-sobre-a-loja h2{
+    font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: crimson;
+  margin-bottom: 3%;
+}
+
+#linha-colorida{
+    background-color: deeppink;
+    width: 55%;
+    height: 3px;
+    margin-bottom: 3%;
+}
+.container-sobre-a-loja p{
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
