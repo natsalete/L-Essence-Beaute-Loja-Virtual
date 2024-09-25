@@ -32,26 +32,38 @@
   </head>
   <body>
     <header>
-      <div class="container-header container">
-        <h1>L'Essence <br/> Beauté</h1>
-        <div class="container-nav">
-          <nav>
-            <ul>
-              <li>
-                <a href="#sobre-a-loja">Sobre a loja</a>
-              </li>
-              <li>
-                <a href="#">Promoções</a>
-              </li>
-              <li>
-                <a href="#">Produtos</a>
-              </li>
-              <li>
-                <a href="#">Contato</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="container-flex container">
+        <h1>
+          L'Essence <br />
+          Beauté
+        </h1>
+        <div class="container-flex">
+          <img src="./images/coração.svg" alt="coração" />
+          <img src="./images/carrinho-compra.svg" alt="Carrinho de compra" />
+          <div class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+      </div>
+      <div class="container-nav container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#sobre-a-loja">Sobre a loja</a>
+            </li>
+            <li>
+              <a href="#promocoes">Promoções</a>
+            </li>
+            <li>
+              <a href="#produtos">Produtos</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <div class="container">
@@ -74,21 +86,202 @@
     </div>
 
     <section id="sobre-a-loja">
-        <div class="container container-sobre-a-loja">
-            <img src="./images/Loja.png" alt="loja L`Essence Beauté">
-            <div>
-                <h2>Sobre a loja</h2>
-            <div id="linha-colorida"></div>
-            <p>A L'Essence Beauté é uma loja de cosméticos dedicada a realçar a beleza natural. Oferecemos produtos de alta qualidade para cuidados com a pele, cabelos, maquiagens e perfumes, com foco em fórmulas seguras e cruelty-free. Nossa missão é trazer o melhor do mundo da beleza, ajudando você a encontrar sua essência única.</p>
-            </div>
+      <div class="container container-sobre-a-loja">
+        <img src="./images/Loja.png" alt="loja L`Essence Beauté" />
+        <div>
+          <h2>Sobre a loja</h2>
+          <div id="linha-colorida"></div>
+          <p>
+            A L'Essence Beauté é uma loja de cosméticos dedicada a realçar a
+            beleza natural. Oferecemos produtos de alta qualidade para cuidados
+            com a pele, cabelos, maquiagens e perfumes, com foco em fórmulas
+            seguras e cruelty-free. Nossa missão é trazer o melhor do mundo da
+            beleza, ajudando você a encontrar sua essência única.
+          </p>
         </div>
+      </div>
     </section>
 
     <section id="promocoes">
-        <div class="container">
-            
+      <div class="container">
+        <h2>Promoções</h2>
+        <div id="linha-colorida"></div>
+        <div class="produtos">
+          <ul>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="./images/Kérastase Discipline Oléo-Relax - Máscara de Nutrição 200ml.png"
+                alt="Kérastase Discipline Oléo-Relax - Máscara de Nutrição 200ml"
+              />
+              <h3>KÉRASTASE</h3>
+              <p id="subtitulo">
+                Discipline Oléo-Relax - Máscara de Nutrição 200ml
+              </p>
+              <div class="price">
+                <del>R$ 426,90</del>
+                <strong>R$ 209,90</strong>
+              </div>
+              <p id="descricao">
+                Máscara de nutrIção para cabelos com frizz. Repara a fibra
+                capilar e evita o frisado por até 24 horas.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="images/CeraVe Rosto & Corpo - Loção Hidratante 473ml.png"
+                alt="CeraVe Rosto & Corpo - Loção Hidratante 473ml"
+              />
+              <h3>CERAVE</h3>
+              <p id="subtitulo">Rosto & Corpo - Loção Hidratante 473ml</p>
+              <div class="price">
+                <del>R$ 119,90</del>
+                <strong>R$ 89,90</strong>
+              </div>
+              <p id="descricao">
+                Loção hidratante para peles secas ou ressecadas. Com textura
+                fluida e rápida absorção, nutre completamente.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="images/Chloé Eau de Parfum - Perfume Feminino 30ml.png"
+                alt="Chloé Eau de Parfum - Perfume Feminino 30ml"
+              />
+              <h3>CHLOÉ</h3>
+              <p id="subtitulo">Eau de Parfum - Perfume Feminino 30ml</p>
+              <div class="price">
+                <del>R$ 528,90</del>
+                <strong>R$ 411,90</strong>
+              </div>
+              <p id="descricao">
+                Perfume Importado floral.Aroma fresco e delicado com presença
+                suave de rosas, para mulheres elegantes.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="./images/La Roche-Posay MelaB3 - Sérum Facial Redutor de Marcas 30ml.png"
+                alt="La Roche-Posay MelaB3 - Sérum Facial Redutor de Marcas 30ml"
+              />
+              <h3>LA ROCHE-POSAY</h3>
+              <p id="subtitulo">MelaB3 - Sérum Facial Redutor de Marcas 30ml</p>
+              <div class="price">
+                <del>R$ 289,90</del>
+                <strong>R$ 260,90</strong>
+              </div>
+              <p id="descricao">
+                Sérum facial redutor de marcas.Tecnologia inovadora para
+                uniformizar diferenças de tonalidade na pele.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
+
+
+    <div class="container prod-link">
+      <a href="#">Ver mais promoções</a>
+    </div>
+
+    <section id="produtos">
+      <div class="container">
+        <h2>Produtos</h2>
+        <div id="linha-colorida"></div>
+        <div class="produtos sem-prom">
+          <ul>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="./images/Wella Professionals Oil Reflections Luminous Reboost - Máscara Capilar 500ml.png"
+                alt="Wella Professionals Oil Reflections Luminous Reboost - Máscara Capilar 500ml"
+              />
+              <h3>WELLA</h3>
+              <p id="subtitulo">
+                Oil Reflections Luminous Reboost - Máscara 500ml
+              </p>
+              <div class="price">
+                <strong>R$ 234,90</strong>
+              </div>
+              <p id="descricao">
+                Máscara para todos os tipos de cabelo. Deixa os fios luminosos, macios e restaura a estrutura capilar.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="images/Sauvage Dior Eau de Parfum Refilável - Perfume Masculino 100ml.png"
+                alt="Sauvage Dior Eau de Parfum Refilável - Perfume Masculino 100ml"
+              />
+              <h3>DIOR</h3>
+              <p id="subtitulo">Rosto & Corpo - Loção Hidratante 473ml</p>
+              <div class="price">
+                <strong>R$ 929,00</strong>
+              </div>
+              <p id="descricao">
+                Perfume importado masculino oriental fougére. Traz forte o contraste entre frescor e voluptuosidade.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="images/Avène Eau Thermale - Água Termal 300ml.png"
+                alt="Avène Eau Thermale - Água Termal 300ml"
+              />
+              <h3>AVÉNE</h3>
+              <p id="subtitulo">Eau Thermale - Água Termal 300ml</p>
+              <div class="price">
+                <strong>R$ 104,90</strong>
+              </div>
+              <p id="descricao">
+                Água termal em spray para pele sensível: acalma, suaviza, hidrata e oferece sensação de frescor.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+            <li>
+              <img id="img-coracao" src="./images/coração.svg" alt="coração" />
+              <img
+                id="produto"
+                src="./images/Essence Get Big! Lashes Volume Curl - Máscara para Cílios 12ml.png"
+                alt="Essence Get Big! Lashes Volume Curl - Máscara para Cílios 12ml"
+              />
+              <h3>ESSENCE</h3>
+              <p id="subtitulo">Get Big! Lashes Volume Curl - Máscara para Cílios 12ml</p>
+              <div class="price">
+                <strong>R$ 23,90</strong>
+              </div>
+              <p id="descricao">
+                Máscara para cílios preta. Proporciona um olhar mais destacado e aberto ao aumentar o volume e encurvar.
+              </p>
+              <button type="button">Adicionar ao carrinho</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="container prod-link">
+      <a href="#">Ver mais produtos</a>
+    </div>
+
+  
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
