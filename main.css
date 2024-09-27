@@ -59,7 +59,7 @@ header h1 {
   color: deeppink;
 }
 
-nav {
+nav{
   display: none;
 }
 
@@ -378,7 +378,7 @@ footer {
     background-color: #fff;
   }
 
-  nav li{
+  nav li {
     margin: 0 3% 10px 3%;
   }
 
@@ -395,7 +395,7 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
-  .contato-metodos form{
+  .contato-metodos form {
     margin-right: 30px;
     margin-left: 5px;
   }
@@ -408,7 +408,7 @@ footer {
   }
 
   header h1 {
-   font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   #carousel-imagens img {
@@ -417,7 +417,6 @@ footer {
   /* .container-flex{
     flex-wrap: wrap;
   } */
-    
 
   .container-sobre-a-loja img {
     width: 100%;
@@ -431,7 +430,11 @@ footer {
     min-height: 300px; /* Menor altura para produtos */
   }
 
-  nav ul{
+  nav{
+    display: none;
+  }
+
+  nav ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -449,7 +452,7 @@ footer {
     flex-direction: column;
   }
 
-  .contato-metodos form button{
+  .contato-metodos form button {
     width: 320px;
     margin-bottom: 10%;
   }
