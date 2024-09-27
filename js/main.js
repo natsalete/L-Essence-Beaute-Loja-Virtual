@@ -10,8 +10,8 @@ $(document).ready(function () {
   $(".menu-hamburguer").on("click touchstart", function () {
     $("nav").slideToggle();
   });
-  
-  $(".container-nav li a").on("click touchstart",function (e) {
+
+  $(".container-nav li a").on("click touchstart", function (e) {
     e.preventDefault(); // Evita o comportamento padrão do link
 
     // Pega o valor do atributo href do link clicado (o destino)
@@ -44,9 +44,9 @@ $(document).ready(function () {
     contadorFavoritos.text(valorAtual > 0 ? valorAtual - 1 : 0);
   });
 
-  const contadorCarinho = $(".contador-carinho");
-
-  $(".button-carinho").on("click touchstart", function () {
+  $(".button-carinho").on("click touchstart", function (event) {
+    event.preventDefault();
+    const contadorCarinho = $(".contador-carinho");
     contadorCarinho.text(parseInt(contadorCarinho.text()) + 1);
   });
 
