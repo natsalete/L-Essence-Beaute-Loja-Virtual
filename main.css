@@ -1,16 +1,29 @@
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
 body {
   background-color: azure;
+  padding-top: 50px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -37,10 +50,6 @@ body {
   padding-right: 1.7em;
 }
 
-header {
-  background-color: #fff;
-}
-
 header h1 {
   font-family: "Syncopate", sans-serif;
   font-weight: 400;
@@ -50,19 +59,17 @@ header h1 {
 }
 
 nav {
-  padding: 1em 0 1em 0;
   display: none;
 }
 
 nav li {
   list-style: none;
-  display: inline;
-  margin-right: 1em;
-  font-family: Poppins, sans-serif;
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 6% 10px 6%;
   font-size: 1.1em;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0 7% 0 7%;
 }
 
 nav li a {
@@ -77,13 +84,41 @@ nav li a:hover {
 #carousel-imagens img {
   width: 100%;
   height: 360px;
+  margin-top: 9%;
 }
 
 #carousel-imagens p {
-  font-family: Poppins, sans-serif;
   font-weight: 500;
   text-align: right;
   background-color: aliceblue;
+}
+
+.img-favorito,
+.img-carinho {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contador-favoritos,
+.contador-carinho {
+  position: absolute;
+  top: 17px;
+  margin-left: 10px;
+  background-color: deeppink;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.contador-carinho {
+  top: 18px;
+  margin-left: 15px;
 }
 
 .container-sobre-a-loja {
@@ -98,7 +133,8 @@ nav li a:hover {
 
 .container-sobre-a-loja h2,
 #promocoes h2,
-#produtos h2 {
+#produtos h2,
+#contato h2 {
   font-family: "Syncopate", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
@@ -112,42 +148,56 @@ nav li a:hover {
   height: 3px;
   margin-bottom: 3%;
 }
+
 .container-sobre-a-loja p {
-  font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 1.2em;
 }
 
 #promocoes h2,
-#produtos h2 {
+#produtos h2,
+#contato h2 {
   margin-top: 3%;
   margin-bottom: 1%;
 }
 
+/* Grid de produtos */
 .produtos ul {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  column-gap: 1%;
-  row-gap: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
 }
 
 .produtos li {
   list-style: none;
   background-color: #ccc;
   border: 1px solid #ebebeb;
-  border-radius: 2px;
-  max-width: 236px;
-  min-height: 400px;
-  min-width: 236px;
-  padding: 6%;
-  vertical-align: top;
-  white-space: normal;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#img-coracao {
+.img-coracao {
   float: right;
-  margin: 3% 7%;
+  margin: 4% 7%;
   cursor: pointer;
+  transition: filter 0.3s;
+  width: 24px;
+  height: 24px;
+}
+
+.img-coracaoVermelho {
+  float: right;
+  /* margin-top: 3px; */
+  margin: 0.9% 4%;
+  cursor: pointer;
+  transition: filter 0.3s;
+  width: 36px;
+  height: 36px;
+  display: none;
 }
 
 #produto {
@@ -158,7 +208,6 @@ nav li a:hover {
 
 .produtos li h3 {
   color: black;
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -169,7 +218,6 @@ nav li a:hover {
 
 #subtitulo {
   color: black;
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -183,20 +231,17 @@ nav li a:hover {
 
 .price del {
   color: #fff;
-  font-family: Poppins, sans-serif;
   font-size: 1em;
   margin-right: 1%;
 }
 
 .price strong {
   color: #2f3334;
-  font-family: Poppins, sans-serif;
   font-size: 1em;
 }
 
 #descricao {
   color: black;
-  font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 1em;
   margin-bottom: 10%;
@@ -210,15 +255,14 @@ nav li a:hover {
   border: none;
   background-color: hotpink;
   color: #fff;
-  font-size: 16px;
-  font-family: Poppins, sans-serif;
+  font-size: 1em;
   font-style: italic;
   cursor: pointer;
   border-radius: 6px;
   margin-top: auto;
 }
 
-.produtos li button:hover{
+.produtos li button:hover {
   background-color: deeppink;
 }
 
@@ -227,13 +271,12 @@ nav li a:hover {
   width: 50em;
   text-align: center;
   margin-top: 2%;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 }
 
 .prod-link a {
   display: inline-block;
   font-size: 1.3em;
-  font-family: Poppins, sans-serif;
   font-style: italic;
   cursor: pointer;
   color: #ff4081;
@@ -245,10 +288,171 @@ nav li a:hover {
 .prod-link:hover {
   color: #e91e63;
   font-size: 20px;
-  border-bottom: 2px solid #e91e63;
+  /* border-bottom: 2px solid #e91e63; */
   transform: scale(1.05);
 }
 
 .sem-prom li {
   background-color: #fff;
+}
+
+.social-links img {
+  height: 24px;
+  margin-bottom: 20%;
+}
+
+.social-links li {
+  display: inline;
+  margin-right: 8%;
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+
+#contato .container {
+  display: block;
+  margin-bottom: 1%;
+  /* padding: 0 2%; */
+}
+
+.contato-metodos {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 320px;
+  max-width: 320px;
+  margin-bottom: 8px;
+  padding: 3%;
+}
+
+form textarea {
+  resize: none;
+  height: 180px;
+}
+
+section h3 {
+  margin-bottom: 1em;
+}
+
+form button {
+  background-color: hotpink;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
+}
+
+form button:hover {
+  background-color: deeppink;
+}
+
+footer {
+  background-color: #fff;
+  color: #2f3334;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.error {
+  color: red;
+}
+
+/* Ajuste para media queries */
+@media (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  nav li{
+    margin: 0 3% 10px 3%;
+  }
+
+  .container-sobre-a-loja {
+    flex-direction: column;
+  }
+
+  .container-sobre-a-loja img {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .produtos ul {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .contato-metodos form{
+    margin-right: 30px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  header h1 {
+   font-size: 1.5em;
+  }
+
+  #carousel-imagens img {
+    height: 260px;
+  }
+  /* .container-flex{
+    flex-wrap: wrap;
+  } */
+    
+
+  .container-sobre-a-loja img {
+    width: 100%;
+  }
+
+  .produtos ul {
+    grid-template-columns: 1fr; /* Produtos em uma coluna */
+  }
+
+  .produtos li {
+    min-height: 300px; /* Menor altura para produtos */
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* nav li {
+    margin: 3% 3%; 
+  } */
+
+  nav {
+    padding: 10px 0; /* Ajusta padding do menu */
+  }
+
+  .contato-metodos {
+    flex-direction: column;
+  }
+
+  .contato-metodos form button{
+    width: 320px;
+    margin-bottom: 10%;
+  }
+
+  .social-links img {
+    margin-bottom: 10%;
+  }
 }
