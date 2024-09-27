@@ -7,7 +7,8 @@ $(document).ready(function () {
     adaptiveHeight: true,
   });
 
-  $(".menu-hamburguer").on("click touchstart", function () {
+  $(".menu-hamburguer").on("click touchstart", function (e) {
+    e.preventDefault();
     $("nav").slideToggle();
   });
 
