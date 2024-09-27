@@ -199,7 +199,6 @@ nav li a:hover {
   width: 36px;
   height: 36px;
   display: none;
-  z-index: 1;
 }
 
 #produto {

@@ -32,13 +32,15 @@ $(document).ready(function () {
 
   const contadorFavoritos = $(".contador-favoritos");
 
-  $(".img-coracao").on("click touchstart", function () {
+  $(".img-coracao").on("click touchstart", function (e) {
+    e.preventDefault();
     $(this).css("display", "none");
     $(this).next(".img-coracaoVermelho").css("display", "block");
     contadorFavoritos.text(parseInt(contadorFavoritos.text()) + 1);
   });
 
-  $(".img-coracaoVermelho").on("click touchstart", function () {
+  $(".img-coracaoVermelho").on("click touchstart", function (e) {
+    e.preventDefault();
     $(this).css("display", "none");
     $(this).prev(".img-coracao").css("display", "block");
     let valorAtual = parseInt(contadorFavoritos.text());
