@@ -11,6 +11,10 @@ $(document).ready(function () {
     $("nav").slideToggle();
   });
 
+  $(".menu-hamburguer").off("click touchstart").on("click touchstart", function () {
+    $("nav").slideToggle();
+  });  
+
   $(".container-nav li a").on("click touchstart",function (e) {
     e.preventDefault(); // Evita o comportamento padrão do link
 
