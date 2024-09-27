@@ -59,7 +59,7 @@ header h1 {
   color: deeppink;
 }
 
-nav{
+nav {
   display: none;
 }
 
@@ -410,6 +410,16 @@ footer {
     font-size: 1.5em;
   }
 
+  .contador-favoritos,
+  .contador-carinho {
+    top: 13px;
+    margin-left: 12px;
+  }
+
+  .contador-carinho {
+    margin-left: 15px;
+  }
+
   #carousel-imagens img {
     height: 260px;
   }
@@ -429,7 +439,7 @@ footer {
     min-height: 300px; /* Menor altura para produtos */
   }
 
-  nav{
+  nav {
     display: none;
   }
 
