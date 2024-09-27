@@ -7,9 +7,17 @@ $(document).ready(function () {
     adaptiveHeight: true,
   });
 
+  var flag = false;
   $(".menu-hamburguer").on("click touchstart", function (e) {
     e.preventDefault();
-    $("nav").slideToggle();
+    if(!flag){
+      flag = true;
+      $("nav").slideToggle();
+      setTimeout(function() {
+        flag = false;
+      }, 100);
+    }
+   return false;
   });
 
   $(".container-nav li a").on("click touchstart", function (e) {
