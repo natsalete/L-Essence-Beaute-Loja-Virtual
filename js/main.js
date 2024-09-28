@@ -61,11 +61,11 @@ $(document).ready(function () {
     contadorCarinho.text(parseInt(contadorCarinho.text()) + 1);
   });
 
-  $(".button-carinho").on("touchstart", function (event) {
-    event.preventDefault();
-    $(this).css("width", "120%");
-    $(this).css("background-color", "deeppink");
-  });
+  // $(".button-carinho").on("touchstart", function (event) {
+  //   event.preventDefault();
+  //   $(this).css("width", "120%");
+  //   $(this).css("background-color", "deeppink");
+  // });
 
   $("#telefone").mask("(00)  00000-0000", {
     placeholder: "(__) _____-____",

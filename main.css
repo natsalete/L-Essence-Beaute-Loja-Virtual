@@ -263,7 +263,8 @@ nav li a:hover {
   margin-top: auto;
 }
 
-.produtos li button:hover {
+.produtos li button:hover,
+.produtos li button:active {
   background-color: deeppink;
 }
 
