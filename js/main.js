@@ -76,7 +76,7 @@ $(document).ready(function () {
           height: "+=10px", // Aumenta a altura
           marginLeft: "0",
         },
-        200 // Duração da animação (200ms)
+        400 // Duração da animação (200ms)
       );
   });
 
