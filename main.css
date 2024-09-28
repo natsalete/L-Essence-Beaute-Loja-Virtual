@@ -449,13 +449,17 @@ footer {
   }
 
   .produtos ul {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .produtos li {
     min-height: 300px; /* Menor altura para produtos */
+  }
+
+  .produtos li button{
     max-width: 80%;
     margin-left: 10%;
+    font-size: 0.9em;
   }
 
   nav {

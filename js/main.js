@@ -73,6 +73,7 @@ $(document).ready(function () {
         maxWidth: "100%", // Aumenta a largura
         height: "+=10px", // Aumenta a altura
         marginLeft: "0",
+        backgroundColor: "deeppink",
       },
       200
     ); // Duração da animação (200ms)
@@ -84,6 +85,7 @@ $(document).ready(function () {
         maxWidth: "80%", // Volta ao tamanho original
         height: "-=10px", // Volta ao tamanho original
         marginLeft: "10%",
+        backgroundColor: "hotpink",
       },
       200
     ); // Duração da animação (200ms)
