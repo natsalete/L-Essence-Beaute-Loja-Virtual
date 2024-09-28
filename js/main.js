@@ -10,14 +10,14 @@ $(document).ready(function () {
   var flag = false;
   $(".menu-hamburguer").on("click touchstart", function (e) {
     e.preventDefault();
-    if(!flag){
+    if (!flag) {
       flag = true;
       $("nav").slideToggle();
-      setTimeout(function() {
+      setTimeout(function () {
         flag = false;
       }, 100);
     }
-   return false;
+    return false;
   });
 
   $(".container-nav li a").on("click touchstart", function (e) {
@@ -66,6 +66,26 @@ $(document).ready(function () {
   //   $(this).css("width", "120%");
   //   $(this).css("background-color", "deeppink");
   // });
+
+  $(".button-carinho").on("touchstart", function () {
+    $(this).animate(
+      {
+        width: "+=20px", // Aumenta a largura
+        height: "+=10px", // Aumenta a altura
+      },
+      200
+    ); // Duração da animação (200ms)
+  });
+
+  $(".button-carinho").on("touchend", function () {
+    $(this).animate(
+      {
+        width: "-=20px", // Volta ao tamanho original
+        height: "-=10px", // Volta ao tamanho original
+      },
+      200
+    ); // Duração da animação (200ms)
+  });
 
   $("#telefone").mask("(00)  00000-0000", {
     placeholder: "(__) _____-____",
