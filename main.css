@@ -397,7 +397,7 @@ footer {
   }
 
   .produtos ul {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
   /* form {
@@ -449,7 +449,7 @@ footer {
   }
 
   .produtos ul {
-    grid-template-columns: 1fr; /* Produtos em uma coluna */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
   .produtos li {
