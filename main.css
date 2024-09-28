@@ -192,7 +192,6 @@ nav li a:hover {
 
 .img-coracaoVermelho {
   float: right;
-  /* margin-top: 3px; */
   margin: 0.9% 4%;
   cursor: pointer;
   transition: filter 0.3s;
@@ -272,7 +271,6 @@ nav li a:hover {
   width: 50em;
   text-align: center;
   margin-top: 2%;
-  /* background-color: #f0f0f0; */
 }
 
 .prod-link a {
@@ -289,7 +287,6 @@ nav li a:hover {
 .prod-link:hover {
   color: #e91e63;
   font-size: 20px;
-  /* border-bottom: 2px solid #e91e63; */
   transform: scale(1.05);
 }
 
@@ -314,7 +311,6 @@ nav li a:hover {
 #contato .container {
   display: block;
   margin-bottom: 1%;
-  /* padding: 0 2%; */
 }
 
 .contato-metodos {
@@ -365,7 +361,7 @@ footer {
   color: red;
 }
 
-/* Ajuste para media queries */
+
 @media (max-width: 1023px) {
   .container {
     max-width: 90%;
@@ -411,10 +407,6 @@ footer {
     margin-left: 5px;
   }
 
-  /* .contato-metodos button {
-    max-width: 95%;
-    
-  } */
 }
 
 @media (max-width: 640px) {
@@ -440,10 +432,7 @@ footer {
   #carousel-imagens img {
     height: 260px;
   }
-  /* .container-flex{
-    flex-wrap: wrap;
-  } */
-
+ 
   .container-sobre-a-loja img {
     width: 100%;
   }
@@ -453,7 +442,7 @@ footer {
   }
 
   .produtos li {
-    min-height: 300px; /* Menor altura para produtos */
+    min-height: 300px; 
   }
 
   .produtos li button{
@@ -472,12 +461,8 @@ footer {
     flex-wrap: wrap;
   }
 
-  /* nav li {
-    margin: 3% 3%; 
-  } */
-
   nav {
-    padding: 10px 0; /* Ajusta padding do menu */
+    padding: 10px 0; 
   }
 
   .contato-metodos {
