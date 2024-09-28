@@ -389,15 +389,34 @@ footer {
     width: 100%;
     margin-bottom: 3%;
   }
+/* 
+  .produtos li{
+    display: flex;
+  }
+  
+  .produtos li button {
+    max-width: 50%;
+  } */
 
   .produtos ul {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
+  /* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
   .contato-metodos form {
     margin-right: 30px;
     margin-left: 5px;
   }
+
+  /* .contato-metodos button {
+    max-width: 95%;
+    
+  } */
 }
 
 @media (max-width: 640px) {
