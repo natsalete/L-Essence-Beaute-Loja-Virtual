@@ -165,7 +165,7 @@ nav li a:hover {
 /* Grid de produtos */
 .produtos ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 16px;
   padding: 20px;
 }
@@ -263,7 +263,7 @@ nav li a:hover {
   margin-top: auto;
 }
 
-.produtos li button:hover{
+.produtos li button:hover {
   background-color: deeppink;
 }
 
@@ -389,17 +389,15 @@ footer {
     width: 100%;
     margin-bottom: 3%;
   }
-/* 
-  .produtos li{
-    display: flex;
-  }
-  
+
+
   .produtos li button {
-    max-width: 50%;
-  } */
+    max-width: 80%;
+    margin-left: 10%;
+  }
 
   .produtos ul {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 
   /* form {
@@ -456,6 +454,8 @@ footer {
 
   .produtos li {
     min-height: 300px; /* Menor altura para produtos */
+    max-width: 80%;
+    margin-left: 10%;
   }
 
   nav {

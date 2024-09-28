@@ -70,8 +70,9 @@ $(document).ready(function () {
   $(".button-carinho").on("touchstart", function () {
     $(this).animate(
       {
-        width: "+=20px", // Aumenta a largura
+        maxWidth: "100%", // Aumenta a largura
         height: "+=10px", // Aumenta a altura
+        marginLeft: "0",
       },
       200
     ); // Duração da animação (200ms)
@@ -80,8 +81,9 @@ $(document).ready(function () {
   $(".button-carinho").on("touchend", function () {
     $(this).animate(
       {
-        width: "-=20px", // Volta ao tamanho original
+        maxWidth: "80%", // Volta ao tamanho original
         height: "-=10px", // Volta ao tamanho original
+        marginLeft: "10%",
       },
       200
     ); // Duração da animação (200ms)
