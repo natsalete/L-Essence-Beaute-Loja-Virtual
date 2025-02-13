@@ -32,3 +32,8 @@ https://github.com/user-attachments/assets/f219b6ce-219d-47ea-8a31-43f611190d9d
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## 📄 Licença  
+Este projeto está sob a licença MIT – consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
